@@ -1,0 +1,2 @@
+python train_boosted.py breast_cancer gaussian 0.25 --warmup 100 --boosting standard --boosting_percentile 0.98 --balanced 0 --cert_sigma 0.25 --max_boosting_classifiers 40 --max_feature_reuse 5 --boosting_lr 1
+python train_boosted.py diabetes gaussian 0.15 --warmup 100 --boosting standard --boosting_percentile 0.95 --balanced 1 --cert_sigma 0.15 --max_boosting_classifiers 100 --max_feature_reuse 50 --boosting_lr 1

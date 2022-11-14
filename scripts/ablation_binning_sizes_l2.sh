@@ -1,0 +1,23 @@
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_4.0.pkl --bin_size 4.0; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_4.0.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_4.0 gaussian 0.5 --device cuda; \
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_2.0.pkl --bin_size 2.0; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_2.0.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_2.0 gaussian 0.5 --device cuda; \
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_1.0.pkl --bin_size 1.0; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_1.0.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_1.0 gaussian 0.5 --device cuda; \
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_0.5.pkl --bin_size 0.5; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_0.5.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_0.5 gaussian 0.5 --device cuda; \
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_0.1.pkl --bin_size 0.1; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_0.1.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_0.1 gaussian 0.5 --device cuda; \
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_0.05.pkl --bin_size 0.05; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_0.05.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_0.05 gaussian 0.5 --device cuda; \
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_0.01.pkl --bin_size 0.01; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_0.01.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_0.01 gaussian 0.5 --device cuda; \
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_0.005.pkl --bin_size 0.005; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_0.005.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_0.005 gaussian 0.5 --device cuda; \
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_0.001.pkl --bin_size 0.001; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_0.001.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_0.001 gaussian 0.5 --device cuda; \
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_0.0005.pkl --bin_size 0.0005; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_0.0005.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_0.0005 gaussian 0.5 --device cuda; \
+python train.py mnist_1_5 gaussian 0.5 --output_path ./models/ablation_binning_sizes/mnist_1_5_l2 --model_name stump_ensemble_0.0001.pkl --bin_size 0.0001; \
+python certify.py mnist_1_5 ./models/ablation_binning_sizes/mnist_1_5_l2/stump_ensemble_0.0001.pkl ./experiments/ablation_binning_sizes/mnist_1_5_l2 certified_radii_0.0001 gaussian 0.5 --device cuda; \
+python analyze.py ./experiments/ablation_binning_sizes/mnist_1_5_l2/table 2 ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_4.0  ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_2.0  ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_1.0  ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_0.5  ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_0.1  ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_0.05  ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_0.01  ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_0.005  ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_0.001  ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_0.0005  ./experiments/ablation_binning_sizes/mnist_1_5_l2/certified_radii_0.0001;

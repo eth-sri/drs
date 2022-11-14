@@ -1,0 +1,2 @@
+python train_boosted.py breast_cancer uniform 2 --warmup 100 --boosting standard --boosting_percentile 0.6 --balanced 1 --cert_sigma 2.0 --max_boosting_classifiers 30 --max_feature_reuse 3 --boosting_lr 1
+python train_boosted.py diabetes uniform 0.28 --warmup 100 --boosting standard --boosting_percentile 0.7 --balanced 1 --cert_sigma 0.28 --max_boosting_classifiers 15 --max_feature_reuse 2 --boosting_lr 1
